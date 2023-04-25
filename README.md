@@ -20,6 +20,7 @@ Git clone the project and run the following commands:
 6) DRY (don't repeat yourself) principle is enforced! If we use something more than 3 times it needs to become a separate widget;
 7) Every new widget should be Material 2,3 compatible;
 8) Be eco devs and gather the "garbage" even if it is not yours. Optimize and improve when and where you can.
+9) Branch nameing must respect one of the following: feature/<what i did> , fix/<what i fixed>, improve/<what i improved>
 
 
 ## License :newspaper:
