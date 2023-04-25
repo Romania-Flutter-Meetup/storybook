@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//TODO make this better
+//TO DO make this better
 extension ContextExtension on BuildContext {
   MediaQueryData get mediaQuery => MediaQuery.of(this);
 }
