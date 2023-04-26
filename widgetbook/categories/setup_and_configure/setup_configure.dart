@@ -10,11 +10,11 @@ class SetupConfigure {
     return WidgetbookCategory(
         name: 'Setup & Configure',
         isExpanded: false,
-        widgets: [
-          WidgetbookComponent(name: 'Setup', useCases: [
+        widgets: <WidgetbookComponent>[
+          WidgetbookComponent(name: 'Setup', useCases: <WidgetbookUseCase>[
             WidgetbookUseCase(
                 name: 'Setup before running',
-                builder: (context) {
+                builder: (BuildContext context) {
                   return SizedBox(
                     width: context.width * 0.9,
                     height: context.height * 0.8,
@@ -26,7 +26,7 @@ class SetupConfigure {
                 }),
             WidgetbookUseCase(
                 name: 'Run the project',
-                builder: (context) {
+                builder: (BuildContext context) {
                   return SizedBox(
                     width: context.width * 0.9,
                     height: context.height * 0.2,
@@ -35,7 +35,7 @@ class SetupConfigure {
                 }),
             WidgetbookUseCase(
                 name: 'Limitations',
-                builder: (context) {
+                builder: (BuildContext context) {
                   return SizedBox(
                     width: context.width * 0.9,
                     height: context.height * 0.2,
