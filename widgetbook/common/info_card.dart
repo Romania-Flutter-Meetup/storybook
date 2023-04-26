@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'section_title.dart';
 
 class InfoCard extends StatelessWidget {
-  final String title;
-  final String content;
   const InfoCard({
     super.key,
     required this.title,
     required this.content,
   });
+  final String title;
+  final String content;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class InfoCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: [
+          children: <Widget>[
             SectionTitle(title: title),
             Text(content),
           ],

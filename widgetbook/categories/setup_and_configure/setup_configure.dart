@@ -10,7 +10,7 @@ class SetupConfigure {
     return WidgetbookCategory(
         name: 'Setup & Configure',
         isExpanded: false,
-        widgets: [
+        widgets: <WidgetbookComponent>[
           WidgetbookComponent(name: 'Setup', useCases: <WidgetbookUseCase>[
             WidgetbookUseCase(
                 name: 'Setup before running',
