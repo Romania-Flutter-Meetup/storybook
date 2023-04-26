@@ -10,15 +10,21 @@ class WidgetBookHotReload extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Widgetbook(
+    return Widgetbook<dynamic>(
       appInfo: AppInfo(name: 'Flutter Romania CookBook'),
-      categories: [
+      categories: <WidgetbookCategory>[
         IntroductionCategory.getIntroductionCategory(context),
         SetupConfigure.getSetupConfigure(context)
       ],
-      themes: [
-        WidgetbookTheme(name: 'Light', data: AppTheme.getLightTheme(context)),
-        WidgetbookTheme(name: 'Dark', data: AppTheme.getDarkTheme(context))
+      themes: <WidgetbookTheme<dynamic>>[
+        WidgetbookTheme<dynamic>(
+          name: 'Light',
+          data: AppTheme.getLightTheme(context),
+        ),
+        WidgetbookTheme<dynamic>(
+          name: 'Dark',
+          data: AppTheme.getDarkTheme(context),
+        )
       ],
     );
   }
