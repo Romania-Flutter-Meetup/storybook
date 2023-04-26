@@ -15,7 +15,7 @@ jobs:
       - run: flutter test
       - run: flutter config --enable-web
         shell: bash
-      - run: flutter build web --release -t widgetbook/main.dart --web-renderer=auto --base-href / 
+      - run: flutter build web --release -t widgetbook/main.dart --web-renderer=auto --base-href /storybook/ 
         shell: bash
       - run: git config user.name github-actions
         shell: bash
