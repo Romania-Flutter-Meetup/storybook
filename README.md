@@ -1,4 +1,4 @@
-# Storybook :notebook:
+# Storybook :notebook:  [![.github/workflows/quality-check.yaml](https://github.com/Romania-Flutter-Meetup/storybook/actions/workflows/quality-check.yaml/badge.svg?branch=main)](https://github.com/Romania-Flutter-Meetup/storybook/actions/workflows/quality-check.yaml)  
 
 The Flutter Romania Meetup CookBook
 
