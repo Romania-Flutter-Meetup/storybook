@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - uses: subosito/flutter-action@v1
@@ -15,7 +14,17 @@ jobs:
           channel: beta
       - run: flutter pub get
       - run: flutter test
-      - uses: bluefireteam/flutter-gh-pages@v7
-        with:
-          baseHref: /storybook/
-          workingDir: widgetbook
+      - run: flutter config --enable-web
+        shell: bash
+      - run: flutter build web --release -t widgetbook/main.dart --web-renderer=auto --base-href / 
+        shell: bash
+      - run: git config user.name github-actions
+        shell: bash
+      - run: git config user.email github-actions@github.com
+        shell: bash
+      - run: git --work-tree build/web add --all
+        shell: bash
+      - run: git commit -m "Automatic deployment by github-actions"
+        shell: bash
+      - run: git push origin HEAD:gh-pages --force
+        shell: bash
