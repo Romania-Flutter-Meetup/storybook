@@ -11,6 +11,12 @@ Git clone the project and run the following commands:
 2) flutter run -t widgetbook/main.dart;
 
 
+## How to build :hammer:
+To build for the web:
+1) flutter build web --release -t widgetbook/main.dart;
+
+Try to squash commits if you have a large number of commits;
+
 ## Contribution guides :smirk:
 1) Before a pull request every branch has to have a liniar history (rebase before merge-ing);
 2) Before a pull request you need to get an approve from at least one responsible person;
