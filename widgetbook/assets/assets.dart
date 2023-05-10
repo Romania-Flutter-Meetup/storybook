@@ -1,6 +1,12 @@
 // ignore_for_file: constant_identifier_names
 
 class Assets {
+  static const String ELEVATED_BUTTON = '''
+\u2022 Un button de tip elevated button se foloseste pentru a marca actiuni importante si poate fi customizat in diverse moduri de la forma pana la culoare si modul de interactiune cu el.
+
+\u2022 Acest tip de button primeste ca parametri
+''';
+
   static const String INTRO_TEXT = '''
 \u2022 Crearea unui storybook pentru Flutter este o metodă eficientă de a uniformiza design-ul și de a oferi exemple clare pentru a ajuta dezvoltatorii să înțeleagă și să utilizeze eficient acest framework. Un storybook este o colecție de componente UI, care pot fi vizualizate și testate separat sau împreună, pentru a crea aplicații cu un aspect și o funcționalitate uniformă.
 
