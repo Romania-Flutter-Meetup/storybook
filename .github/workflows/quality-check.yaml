@@ -10,9 +10,6 @@ jobs:
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
-        
-      - name: Disable telemetry
-        run: flutter --disable-telemetry.
 
       - name: Check format
         run: dart format --line-length 120 --set-exit-if-changed ./lib
